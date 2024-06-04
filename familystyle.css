@@ -1,0 +1,271 @@
+body {
+    background-image: url("images/background.svg");
+    background-size: cover;
+    background-position: center top;
+    font-family: "Comic Sans MS", cursive;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+.hero {
+    padding: 20px;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    height: 75px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.nav-buttons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-buttons table {
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.nav-buttons td {
+    border: none;
+    padding: 10px;
+}
+
+.nav-buttons img {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+
+.section {
+    padding: 10px;
+    border-radius: 50px;
+    overflow: hidden; 
+}
+.section h2 {
+    font-family: "Rockwell", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#father-section h2 {
+    color: #333;
+    background-color: #e0f7fa; 
+}
+
+#mother-section h2 {
+    color: #333;
+    background-color: #ffecb3; 
+}
+
+#sister-section h2 {
+    color: #333;
+    background-color: #d1c4e9; 
+}
+
+#brother-section h2 {
+    color: #333;
+    background-color: #c8e6c9; 
+}
+
+a.nurdania-link:hover {
+  color: #2e86c1;
+}
+
+a.family-link:hover {
+    color: #f00;
+}
+
+a.friends-link:hover {
+    color: #ffa500;
+}
+
+a.gallery-link:hover {
+    color: #ff0;
+}
+
+a.essentials-link:hover {
+    color: #0f0;
+}
+
+a.hobby-link:hover {
+    color: #00f;
+}
+
+a.recommendations-link:hover {
+    color: #800080;
+}
+.container {
+    width: 100%;
+    max-width: 1100px; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container .card {
+    position: relative;
+    width: 260px;
+    height: 200px;
+    background-color: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover {
+    height: 485px;
+}
+
+.container .card .image {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: 10px;
+    z-index: 1; 
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.container .card .image img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -200px; 
+    padding: 10px 15px;
+    text-align: center; 
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content {
+    visibility: visible; 
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.1s;
+}
+/* Dropdown styles */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  float: none;
+}
+
+.dropdown-content li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content li a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.content {
+  flex: 1; 
+}
+
+footer {
+  color: black;
+  padding: 20px 0; 
+  text-align: center;
+  border-top: none; 
+  background: none; 
+  font-family: "Comic Sans MS", cursive;
+  margin-top: auto; 
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-content a:hover {
+  color: orange; 
+  text-decoration: underline;
+}
+
+.path-link:hover {
+  color: orange; 
+}
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 20px;
+  gap: 20px; 
+}
+
+.image-container img {
+  max-width: 500px; 
+  height: auto;
+}
+

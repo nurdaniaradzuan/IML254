@@ -1,0 +1,273 @@
+body {
+  background-image: url("images/background.svg");
+  background-size: cover;
+  background-position: center top;
+  background-attachment: fixed; 
+  font-family: "Comic Sans MS", cursive;
+}
+
+.hero {
+    padding: 20px;
+    position: relative;
+    background-color: transparent; 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    height: 75px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-link:hover .logo {
+
+}
+
+a.nurdania-link:hover {
+  color: #2e86c1;
+}
+
+a.family-link:hover {
+    color: #f00;
+}
+
+a.friends-link:hover {
+    color: #ffa500;
+}
+
+a.gallery-link:hover {
+    color: #ff0;
+}
+
+a.essentials-link:hover {
+    color: #0f0;
+}
+
+a.hobby-link:hover {
+    color: #00f;
+}
+
+a.recommendations-link:hover {
+    color: #800080;
+}
+.logo2-image {
+        max-width: 250px;
+        height: auto;
+}
+.wrapper{
+  max-width: 1100px;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /
+}
+
+.gallery .image {
+  width: calc(33.33% - 20px); 
+  margin-bottom: 20px; 
+}
+.gallery .image span{
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+.gallery .image img{
+  width: 100%;
+  vertical-align: middle;
+  transition: all 0.3s ease;
+}
+.gallery .image:hover img{
+  transform: scale(1.1);
+}
+
+.preview-box{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.9);
+  background: #fff;
+  max-width: 700px;
+  width: 100%;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 3px;
+  padding: 0 5px 5px 5px;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+}
+.preview-box.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) scale(1);
+  transition: all 0.3s ease;
+}
+.preview-box .details{
+  display: flex;
+  align-items: center;
+  padding: 12px 15px 12px 10px;
+  justify-content: space-between;
+}
+.preview-box .details .title{
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+}
+.details .title p{
+  margin: 0 5px;
+}
+.details .title p.current-img{
+  font-weight: 500;
+}
+.details .icon{
+  color: #007bff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.preview-box .image-box{
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+.image-box .slide{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  height: 50px;
+  width: 60px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 3px;
+}
+.slide.prev{
+  left: 0px;
+}
+.slide.next{
+  right: 0px;
+}
+.image-box img{
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+}
+.shadow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  display: none;
+  background: rgba(0,0,0,0.45);
+}
+
+@media(max-width: 1000px){
+  .gallery .image{
+    width: calc(100% / 2);
+  }
+}
+@media(max-width: 600px){
+  .gallery .image{
+    width: 100%;
+    padding: 4px;
+  }
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    float: none;
+}
+
+.dropdown-content li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content li a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.content {
+  flex: 1; 
+}
+
+footer {
+  color: black;
+  padding: 20px 0; 
+  text-align: center;
+  border-top: none; 
+  background: none; 
+  font-family: "Comic Sans MS", cursive;
+  margin-top: auto; 
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-content a {
+  color: white;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.footer-content a:hover {
+  color: orange; 
+  text-decoration: underline;
+}
+
+.path-link:hover {
+  color: orange; 
+}
+
